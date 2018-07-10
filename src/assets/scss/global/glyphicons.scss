@@ -1,0 +1,131 @@
+// Catchall baseclass
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  vertical-align: middle;
+  font-family: $font-glyphs;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.glyphicon-user:before {
+  content: "\e000";
+}
+.glyphicon-comments:before {
+  content: "\e001";
+}
+.glyphicon-envelope:before {
+  content: "\e002";
+}
+.glyphicon-facebook:before {
+  content: "\e003";
+}
+.glyphicon-instagram:before {
+  content: "\e004";
+}
+.glyphicon-left-arrow:before {
+  content: "\e005";
+}
+.glyphicon-pencil:before {
+  content: "\e006";
+}
+.glyphicon-phone-call:before {
+  content: "\e007";
+}
+.glyphicon-question-sign:before {
+  content: "\e008";
+}
+.glyphicon-retweet:before {
+  content: "\e009";
+}
+.glyphicon-search:before {
+  content: "\e00a";
+}
+.glyphicon-twitter:before {
+  content: "\e00b";
+}
+.glyphicon-earphone:before {
+  content: "\e00c";
+}
+.glyphicon-camera:before {
+  content: "\e00d";
+}
+.glyphicon-remove:before {
+  content: "\e00e";
+}
+.glyphicon-check:before {
+  content: "\e00f";
+}
+.glyphicon-map-marker:before {
+  content: "\e010";
+}
+.glyphicon-menu-down:before {
+  content: "\e011";
+}
+.glyphicon-menu-left:before {
+  content: "\e012";
+}
+.glyphicon-menu-right:before {
+  content: "\e013";
+}
+.glyphicon-menu-up:before {
+  content: "\e014";
+}
+.glyphicon-export:before {
+  content: "\e015";
+}
+.glyphicon-square:before {
+  content: "\e016";
+}
+.glyphicon-filter:before {
+  content: "\e017";
+}
+.glyphicon-menu-sort:before {
+  content: "\e018";
+}
+.glyphicon-circle:before {
+  content: "\e019";
+}
+.glyphicon-radio:before {
+  content: "\e01a";
+}
+.glyphicon-more:before {
+  content: "\e01b";
+}
+.glyphicon-facebook-square:before {
+  content: "\e01c";
+}
+.glyphicon-twitter-square:before {
+  content: "\e01d";
+}
+.glyphicon-instagram-square:before {
+  content: "\e01e";
+}
+.glyphicon-pinterest-square:before {
+  content: "\e01f";
+}
+.glyphicon-linkedin-square:before {
+  content: "\e020";
+}
+.glyphicon-youtube-play:before {
+  content: "\e021";
+}
+.glyphicon-google-plus-square:before {
+  content: "\e023";
+}
+.glyphicon-tumblr-square:before {
+  content: "\e022";
+}
+.glyphicon-cogwheels:before {
+  content: "\e024";
+}
+.glyphicon-circle-checked:before {
+  content: "\e025";
+}
+.glyphicon-circle-attention:before {
+  content: "\e026";
+}

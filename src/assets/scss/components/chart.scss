@@ -1,0 +1,72 @@
+
+.chart-wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  min-height: 98%;
+  align-items: center;
+  padding: 0 1.5em;
+  justify-content: space-between;
+  .chart{
+    background: url(./assets/img/telemetria_chart.jpg) no-repeat center/100% 100%;
+    padding: 18% 0;
+    width: 100%;
+    margin-top: 2em;
+    @media (min-width: $screen-md) {
+      padding: 13vh 0;
+      min-height: 170px;
+    }
+  }
+}
+.wrapper-legend{
+  display: flex;
+  flex-flow: row wrap;
+  margin: 1.5% 0;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-end;
+  .msg{
+    font-size: 1.3rem;
+    margin-left: 15px;
+    color: $primary;
+  }
+  .legend_chart_item{
+    font-size: 1.4rem;
+    display: inline-block;
+    padding-left: 30px;
+    margin-left: 20px;
+    position: relative;
+    @media (max-width: $screen-xs-max ){
+      font-size: 1.2rem;
+    }
+
+    &:after{
+      content: '';
+      width: 23px;
+      height: 10px;
+      display: inline-block;
+      background: red;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      border-radius: 4px;
+      -webkit-transform: translatey(-50%);
+              transform: translatey(-50%);
+    }
+    &:nth-of-type(1){
+      &:after{
+        background: #a3a1fb;
+      }
+    }
+    &:nth-of-type(2){
+      &:after{
+        background: #f39b57;
+      }
+    }
+    &:nth-of-type(3){
+      &:after{
+        background: #54d8ff;
+      }
+    }
+  }
+
+}  

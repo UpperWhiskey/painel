@@ -1,0 +1,37 @@
+.block-title{
+  &.lined {
+    .container{
+      position: relative;
+      &:before{
+        width: 100%;
+        position: absolute;
+        display: block;
+        bottom: -2px;
+        left: 0;
+      }
+    }
+  }
+}
+
+.title{
+  font-size: 3.15rem;
+  &.s3{
+    font-size: 2.3rem;
+    @media (max-width: $screen-md-max ) {
+      font-size: 1.8rem;
+    }
+  }
+
+}
+.subtitle{
+  font-size: 2.1rem;
+  font-weight: 200;
+  color: $gray-mid;
+  &.s3{
+    font-size: 1.7rem;
+    @media (max-width: $screen-md-max ) {
+      font-size: 1.6rem;
+    }
+  }
+}
+

@@ -1,0 +1,58 @@
+.wrapper-list-item {
+  .item {
+    font-size: 1em;
+    transition: 320ms ease;
+    &:first-of-type{
+      &:hover{
+        .container{
+          border-top: 1px solid transparent;
+        }
+      }
+      .container{
+        border-top: 1px solid $gray;
+      }
+    }
+    
+    .wrapper-content{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-flow: row nowrap;
+    }
+
+    .container{
+      padding-top: 1em;
+      padding-bottom: 1em;
+      border-bottom: 1px solid $gray;
+      .name{
+        display: inline-block;
+      }
+    }
+   
+    &:hover {
+      background-color: #000000;
+      color: #ffffff;
+      cursor: pointer;
+
+      .container{
+        border-bottom: 1px solid transparent;
+      }
+
+      &.title {
+        color: #ffffff;
+      }
+
+      app-arrow-icon{
+        svg{
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.wrapper-list-radio {
+  max-height: 310px;
+  overflow: auto;
+  margin-top: 10px;
+}

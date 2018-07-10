@@ -1,0 +1,7 @@
+<div class="auto_refresh" [ngClass]="{'active': isEnabled() }"> 
+    <button type="button" class="btn_refresh" tabindex="0" placement="bottom" (click)="refresh()">
+      <span class="icon"></span>
+    </button>
+    <button (click)="toggleAutoRefresh()" class="btn_toggleTimer">Auto refresh</button>
+    <span class="timer" [ngClass]="{'active': isEnabled() }" >{{ formatedTimeLeft() }}</span>
+  </div>

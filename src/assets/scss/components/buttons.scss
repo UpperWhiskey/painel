@@ -1,0 +1,78 @@
+/*BUTTONS ==========================*/
+
+button {
+  font-size: 1.2rem;
+  >label {
+    cursor: pointer;
+    margin: 0;
+    font-weight: 400;
+    vertical-align: middle;
+    margin-left: 10px;
+  }
+  background: none;
+  border: 0;
+  box-shadow: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.btn-edit{
+  width: 16px;
+  height: 16px;
+  display: block;
+  background: url(./assets/img/edit.svg) no-repeat center/contain;
+  text-indent: -9999px; 
+  overflow: hidden;
+  &:hover{
+    opacity: .7;
+  }
+}
+
+.btn-back{
+  font-size: 1.4rem;
+  vertical-align: middle;
+  .icon{
+    transform: rotateZ(180deg);
+    margin:0;
+  }
+  &:hover{
+    .icon{
+      border: 1px solid #000;
+    }
+  }
+}
+
+.btn-primary{
+  background-color: $blue;
+  color: #ffffff;
+  border: 1px solid transparent;  
+  border-radius: $borRadius-xs;
+  min-width: 85px;
+  padding: 1em;
+  &.__large{
+    min-width: 115px;
+  }
+  &.__light{
+    background-color: #ffffff;
+    border: 1px solid $blue;  
+    color: $blue;
+  }
+}
+
+
+.btn-secondary{
+  color: #000;
+  background: none;
+}
+
+
+.view-more{
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 1;
+  .btn-view-more{
+    background: none;
+    color: blue;
+    text-decoration: underline;
+  }
+}

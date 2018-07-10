@@ -1,0 +1,198 @@
+
+  .toolbar ol {
+    margin: 0;
+    padding: 0 0 0 10px;
+  }
+  
+  .toolbar {
+    margin: 2.5em 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    .actions{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
+    }
+  }
+
+  
+  
+  @media (max-width: $screen-md-max){
+    .toolbar.bottom{
+      margin: 0;
+    }
+  
+    .toolbar.bottom > div{
+      padding: 0;
+    }
+  
+  }
+  
+  .toolbar .wrapper-page-results {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+  
+  .toolbar .pager {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    margin: 0;
+  }
+  
+  .toolbar .limiter {
+    margin: 0 10px 0 0;
+    font-size: 0.8em;
+    font-weight: normal;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  
+    select {
+      height: 29px;
+      padding: 4px 8px;
+    }
+  }
+  
+  .toolbar .limiter label {
+    font-weight: 200;
+    width: 66px;
+    text-align: left;
+    line-height: 1;
+    margin: 0;
+    display: table;
+    white-space: pre-line;
+  }
+  
+  .count-container {
+    margin: 0 5px;
+  }
+  
+  .toolbar .count-container .amount, .toolbar .limiter label {
+    color: #6d6d6d;
+    font-weight: 200;
+  }
+  
+  .toolbar .actions {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    text-align: right;
+  }
+  .toolbar.bottom .actions button:before{
+    margin-right: 10px;
+    @media (max-width:$screen-md-max ){
+      &{
+        margin-right: 5px;
+      }
+    }
+  }
+  
+  .toolbar .count-container {}
+  
+  .toolbar .count-container .amount {
+    font-size: 1.1rem;
+  }
+  
+  .toolbar.bottom .btn-primary {
+    padding: 0.6em 1.3em;
+    white-space: nowrap;
+    line-height: 1.8;
+  }
+
+    @media (min-width: $screen-md) {
+      .toolbar .actions {
+        padding-right: 0;
+      }
+  
+    }
+  @media (max-width: $screen-md-max) {
+  
+    // .toolbar .count-container .amount, .toolbar .limiter label, .toolbar .limiter { //   display: none; // }
+    .toolbar .wrapper-page-results {
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      justify-content: flex-end;
+    }
+    .toolbar ol {
+      padding: 0;
+    }
+    .toolbar .actions {
+      margin: 0;
+    }
+    .toolbar.bottom{
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: column wrap;
+              flex-flow: column wrap;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end;
+      display: block;
+      .actions{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: row wrap;
+                flex-flow: row wrap;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
+        padding-right: 0;
+        button{
+          margin-bottom: 1em;
+          display: table;
+          -webkit-display:table;
+          -ms-display:table;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+  
+        }
+        button + button{
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+  

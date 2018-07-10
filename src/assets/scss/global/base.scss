@@ -1,0 +1,173 @@
+body {
+  padding-top: $header-height-lg;
+  font-family: $font-default;
+  color: #545454;
+  background-color: $bg-color;
+  font-size: 100%;
+  letter-spacing: -.02em;
+  line-height: 1.8;
+  width: 100%;
+
+  @media (max-width: $screen-md-max) {
+    padding-top: $header-height-sm;
+  }
+
+  .page{
+    @media (min-width: $screen-md) {
+      padding-left: 55px;
+    }
+    .wrapper-page-content{
+      padding-top: 1.5em;
+    }
+  }
+
+  &.page-home {
+    @media (min-width: $screen-md) {
+      padding-top: 0;
+    }
+  }
+}
+
+@media (min-width: $screen-md) {
+  .page {
+    min-height: 570px;
+  }
+}
+
+@media (max-width: $screen-sm-max) {
+  .opened-menu {
+    overflow: hidden;
+  }
+}
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $screen-sm){
+    & {
+        width: 98%;
+        max-width: 1200px;
+    }
+  }
+
+  @media (min-width: $screen-lg){
+    & {
+        width: 98%;
+        max-width: 1920px;
+    }
+  }
+
+  @media (max-width: $screen-xs-max){
+    &{
+      padding: 0 15px;
+    }
+  }
+  
+}
+
+.row-flex{
+  @media (max-width: $screen-xs-max){
+    >[class^=col]{
+      padding: 0;
+
+    }
+  }
+}
+
+
+@media (min-width: $screen-md) {
+  .row-flex {
+    min-height: 300px;
+    max-height: 600px;
+    height: calc(52vh - 55px);
+    display: flex;
+
+    > [class*="col"] {
+      .item-block {
+        flex: 1;
+        height: 100%;
+      }
+    }
+  }
+
+}
+
+.main-container {
+  min-width: 320px;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.wrapper-block{
+  margin: 0 0 2.7em;
+  @media (max-width: $screen-md-max){
+    &{
+      margin: 0 0 1.3em;
+    }
+  }
+  .container{
+    border-bottom: 1px solid $gray;
+  }
+}
+
+.wrapper-block{
+  
+  &.lined{
+    padding: 0px;
+    border-bottom: 1px solid $gray-light;
+    padding-bottom: 1em;
+    &:nth-last-of-type(1){
+      border: 0;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  @media screen and (max-width: $screen-md) {
+    &.lined{
+      border-bottom: 1px solid transparent;
+    }
+  }
+}
+
+
+
+.wrapper-cicle {
+  display: flex;
+  margin-top: -$header-height-lg;
+  margin-bottom: 0;
+  padding: {
+    left: 1em;
+    right: 1em;
+  }
+  height: calc(100vh - 100px); //footer height
+  background: url("/img/login-bg.jpg") no-repeat;
+  background-size: cover;
+
+  @media (max-width: $screen-sm-max) {
+    margin-top: -$header-height-sm;
+  }
+  @media (max-width: $screen-xs-max) {
+    background: none;
+  }
+}
+
+.fade {
+  &.show {
+    opacity: 1;
+  }
+}
+
+@media (min-width: $screen-sm) {
+  .dashboard > .container > .row-flex {
+    margin-left: -20px;
+  }
+}
+
+// fix
+.wrapper-application .container { 
+  padding-top: 2em;
+  padding-bottom: 2em;
+
+}

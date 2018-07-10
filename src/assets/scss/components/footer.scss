@@ -1,0 +1,92 @@
+.footer {
+  background-color: #FFF;
+  font-size: 1.3rem;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  // social media
+  .wrapper-brand,.wrapper-social-media{
+    display: none;
+  }
+}
+
+.footer .content {
+  padding: 4em 0;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  border-top: 1px solid #ddd;
+  @media screen and (max-width: $screen-md-max) {
+    &{
+      padding: 3em 0;
+    }
+  }
+
+.footer-socials{
+  width: auto;
+  margin: 4em auto 0;
+  display: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  text-align: center;
+  @media screen and (min-width: $screen-md) {
+    &{
+      display: block;
+    }
+  }
+  a{
+    width: 70px;
+    height: 60px;
+    display: inline-block;
+    margin: 0 -2px;
+    border-left: 1px solid rgba(255, 255, 255, 0.25);
+    vertical-align: middle;
+    padding: 21px;
+      &:hover{
+        .nav-ico:before{
+          opacity: 1;
+        }
+      }
+    
+    .nav-ico{
+      width: 16px;
+      height: 16px;
+      border-radius: 0px;
+      display: inline-block;
+      position: relative;
+
+      &:before{
+        content: "";
+        margin-right: 5px;
+        font-family: glyphicons-pag;
+        font-size: 1.3em;
+        vertical-align: middle;
+        line-height: 1;
+        color: #fff;
+        opacity: 0.7;
+      }
+      &.instagram-ico{
+        &:before{content: "\e01e"; } 
+      }
+      &.twitter-ico{
+        &:before{content: "\e01d"; } 
+      }
+      &.facebook-ico{
+        &:before{content: "\e01c"; } 
+      }
+      &.pinterest-ico{
+        &:before{content: "\e01f"; } 
+      }
+      &.youtube-ico{
+        &:before{content: "\e021"; } 
+      }
+      &.tumblr-ico{
+        &:before{content: "\e022"; } 
+      }
+      &.google-ico{
+        &:before{content: "\e023"; } 
+      }
+    }
+  }
+  a:first-child{
+    border: 0;
+  }
+}
+}

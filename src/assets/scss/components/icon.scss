@@ -1,0 +1,23 @@
+.icon{
+
+  &.arrow{
+    
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: inline-block;
+    -webkit-transition: border-color 377ms;
+    transition: border-color 377ms;
+    margin: 0.3rem;
+    padding: 0.6rem;
+    position: relative;
+
+    &.labeled{
+      margin-right: 10px;
+    }
+
+  }
+}
+app-arrow-icon{
+  display: inline-block;
+  vertical-align: middle;
+}

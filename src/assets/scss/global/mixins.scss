@@ -1,0 +1,48 @@
+/*==================================================
+|| Fallback para navagadores que não suportam REM ||
+==================================================*/
+@mixin font-size($sizeValue) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
+
+/*==================================================
+||               GERADOR DE BOTÕES                ||
+==================================================*/
+@mixin buttons($btn-color, $btn-bg) {
+  color: $btn-color;
+  background-color: $btn-bg;
+
+  &:hover, &:focus {
+    background-color: darken($btn-bg, 5%);
+  }
+}
+
+/*==================================================
+||                 LEITOR DE TELA                 ||
+==================================================*/
+@mixin sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+/*==================================================
+||                  OVERLAY MASK                  ||
+==================================================*/
+@mixin overlay-mask {
+  content: "";
+  position: fixed;
+  z-index: 5;
+  top: $header-height-sm;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(#fff, 0.5);
+  animation: overlay-mask 200ms linear;
+}

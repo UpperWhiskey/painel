@@ -1,0 +1,52 @@
+// BreakPoints --------------------- /
+$screen-xxs     : 640px;
+$screen-xs      : 480px;  // phone
+$screen-sm      : 768px;  // tablet
+$screen-md      : 992px;  // desktop
+$screen-lg      : 1200px; // wide desktop
+$screen-lgg     : 1920px; // wide desktop
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xxs-max : ($screen-xxs - 1);
+$screen-xs-max  : ($screen-xs - 1);
+$screen-sm-max  : ($screen-sm - 1);
+$screen-md-max  : ($screen-md - 1);
+$screen-lg-max  : ($screen-lg - 1);
+
+// Header height ------------------- /
+$header-height-lg : 55px;
+$header-height-sm : 50px;
+
+// Pallete Colors ------------------ /
+$primary            : #ec0000;
+$blue               : #3B86FF;
+$base               : #757575;
+$primary-light-1    : lighten($primary, 45%);
+$secondary          : #00a85a;
+$gray-light         : #f1f1f1;
+$gray               : #dddddd;
+$gray-mid           : #828282;
+$gray-dark          : #282828;
+$bg-color           : #F9F9FE;
+$green              : #00FF6F;
+$red                : #D62F2F;  
+
+// BorderRadius ------------------ /
+$borRadius-primary  : 6px;
+$borRadius-xs       : 3px;
+
+// Spacing --------------------------- /
+$gridItemSpace      : 0.6em 0.3em;
+$gridItemSpace2     : 0.2em 0.3em;
+
+// Fonts --------------------------- /
+$font-default: 'Open sans', sans-serif;
+$font-glyphs:  "glyphicons-pag", "custom-glyphicons", "Glyphicons Halflings"; 
+
+$fsize-3             : 1.2rem;
+$fsize-4             : 1.3rem;
+
+/* icons */
+
+// Dirs ---------------------------- /
+$dir-src: './';
